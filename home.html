@@ -1,3 +1,9 @@
+<!--Create a new website using HTML and Bootstrap. 
+The website must include the following:
+At least 2 pages.A Bootstrap navbar, table, and form.
+Bootstrap grid used throughout to format elements
+Elements should stack vertically when the window is small
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +11,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="Home.html">Home</a>
+        <a class="navbar-brand" href="Contact.html">Contact</a>
+        <button class="navbar-toggler" type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarNavDropdown" 
+            aria-controle="navbarNavDropdown" aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+
+
+    <div  class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <table class="table table-dark table-hover">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>James</td>
+                        <td>James@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Darian</td>
+                        <td>Darian@gmail.com</td>
+                    </tr> <tr>
+                        <td>3</td>
+                        <td>Erica</td>
+                        <td>Erica@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm">
+                <table class="table table-dark table-hover">
+                    <tr>
+                        <th>Placement</th>
+                        <th>Name</th>
+                        <th>Funds Raised</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Darian</td>
+                        <td>$350,830</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Erica</td>
+                        <td>$125,290</td>
+                    </tr> <tr>
+                        <td>3</td>
+                        <td>James</td>
+                        <td>$99,367</td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     
 </body>
 </html>
